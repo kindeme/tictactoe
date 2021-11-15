@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 30vw;
+	margin: 3rem auto;
+}
+.title,
+#result {
+	font-size: 2.5rem;
+	text-align: center;
+	color: rgb(58, 34, 78);
+	margin-bottom: 0.5rem;
+}
+.wrapper {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	border: 2px solid rgb(58, 34, 78);
+	background-color: rgb(231, 229, 224);
+}
+.square {
+	display: flex;
+	align-self: center;
+	font-size: 5rem;
+	padding: 2rem 1rem;
+	color: rgb(58, 34, 78);
+}
+.square:nth-child(1),
+.square:nth-child(2),
+.square:nth-child(3),
+.square:nth-child(4),
+.square:nth-child(5),
+.square:nth-child(6) {
+	border-bottom: 2px solid rgb(58, 34, 78);
+}
+.square:nth-child(1),
+.square:nth-child(4),
+.square:nth-child(7),
+.square:nth-child(2),
+.square:nth-child(5),
+.square:nth-child(8) {
+	border-right: 2px solid rgb(58, 34, 78);
+}
