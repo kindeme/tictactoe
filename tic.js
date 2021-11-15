@@ -31,6 +31,7 @@ const hasPlayerWon = (player) => {
 	if (spaces[0] === player) {
 		if (spaces[1] === player && spaces[2] === player) {
 			console.log(`${player} wins up top`);
+
 			return true;
 		}
 		if (spaces[3] === player && spaces[6] === player) {
@@ -41,6 +42,10 @@ const hasPlayerWon = (player) => {
 			console.log(`${player} wins on the diagonal`);
 			return true;
 		}
+		// boxes.forEach((box, index) => {
+		// 	box.addEventListener("click",  function(event){
+		// 		event.preventDefault());
+		// });
 	}
 	//from bottom check up and across
 	if (spaces[8] === player) {
